@@ -1,13 +1,18 @@
 import React from 'react';
 
 import {FiEdit} from 'react-icons/fi';
-import {TiDeleteOutline} from 'react-icons/ti'
-import Form from './form';
-const Todo = ({text, todo, todos, setTodos, inputTask, inputHandler}) => {
+import {TiDeleteOutline} from 'react-icons/ti';
+
+const Todo = ({text, todo, todos, setTodos}) => {
     const deleteHandler = () => {
         setTodos(todos.filter((x) => x.key !== todo.key));
     };
-    const editHandler = () => { };
+    const editHandler = () => { 
+
+        const selectedItem = todos.find(x => x.key === todo.key)
+        console.log(selectedItem.text);
+
+    };
     return(
         <div className = 'todo'>
             <li className = 'todo-item'>{text}</li>

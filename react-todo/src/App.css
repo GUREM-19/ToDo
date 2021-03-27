@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+  }
+  body {
+    background: linear-gradient(
+      45deg,
+      rgb(16, 255, 155) 0%,
+      rgba(100, 115, 255, 1) 100%
+    );
+  }
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 500px;
+    min-height: 600px;
+    background: #ffffff;
+    text-align: center;
+    margin: 125px auto;
+    border-radius: 8px;
+    padding-bottom: 32px;
+  }
+  h1 {
+    margin: 32px 0;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+  }
+  
+.todo-form {
+    margin-bottom: 20px;
+  }
+.todo-input {
+    padding: 9px 30px 9px 9px;
+    border-radius: 4px 4px 4px 4px;
+    border: 2px solid #ff0c55;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #000000;
+    margin-right: 8px;
+  }
+.todo-input::placeholder {
+    color: #000000;
+  }
+.todo-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background: rgb(0, 150, 250) ;
+    color: #fff;
+
+  }
+  .todo-input.edit {
+    border: 2px solid #149fff;
+  }
+
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .delete {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background:transparent;
+    color: rgb(252, 30, 30);
+  }
+  
+  .edit {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background:transparent;
+    color: rgb(52, 154, 223);
+  }
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px auto;
+    color: rgba(131, 131, 131, 0.719);
+    background:transparent;
+    border-radius: 5px;
+    width:100%;
+    border: 2px solid #86868671;
+    text-align: left;
+   }
+   .todos {
+    display: flex;
+    border-radius: 4px 4px 4px 4px;  
+    min-width: 30%;
+    align-items: center;
+    list-style: none;
+    padding: 0rem 0.5rem;
+   }
+   .todos :first-child {
+    width: 250px;
+  }
+
+  .buttons {
+    display: flex;
+    cursor: pointer;
+    font-size: 0;
+  }
